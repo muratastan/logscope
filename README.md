@@ -10,7 +10,7 @@ Geleneksel yöntemlerin aksine, sadece istek sayısındaki artışa (hacme) odak
 🎨 Tasarım ve Arayüz (Figma)
 
 Projenin SaaS ürün sitesi ve etkileşimli analitik panel tasarımlarına aşağıdaki bağlantıdan ulaşabilirsiniz:
-👉 Figma Tasarım Linki
+👉 [Figma Tasarım Linki](https://www.figma.com/design/kIRsA8TcwvZBXdt3IeBIWB/LogScope-%7C-SaaS-%C3%9Cr%C3%BCn-Sitesi-ve-Etkile%C5%9Fimli-Panel-Tasar%C4%B1m%C4%B1?node-id=0-1&p=f)
 
 🚀 Temel Özellikler & İsterler
 
