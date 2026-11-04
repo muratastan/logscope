@@ -1,0 +1,249 @@
+[
+  {
+    "file": "01_SaaS_Tanitim.png",
+    "route": "/",
+    "title": "LogScope — Açıklanabilir log analizi",
+    "text_chars": 3254,
+    "size_kb": 582,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 3301,
+      "sections": 1
+    }
+  },
+  {
+    "file": "02_Genel_Bakis.png",
+    "route": "/app/overview",
+    "title": "LogScope · Genel bakış",
+    "text_chars": 1867,
+    "size_kb": 180,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1357,
+      "sections": 2
+    }
+  },
+  {
+    "file": "03_Trafik_Analizi.png",
+    "route": "/app/traffic",
+    "title": "LogScope · Trafik analizi",
+    "text_chars": 1266,
+    "size_kb": 146,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1090,
+      "sections": 2
+    }
+  },
+  {
+    "file": "04_Model_Merkezi.png",
+    "route": "/app/models",
+    "title": "LogScope · Model merkezi",
+    "text_chars": 2052,
+    "size_kb": 146,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1513,
+      "sections": 2
+    }
+  },
+  {
+    "file": "05_Alarm_Merkezi.png",
+    "route": "/app/alarms",
+    "title": "LogScope · Alarm merkezi",
+    "text_chars": 3832,
+    "size_kb": 156,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 2852,
+      "sections": 2
+    }
+  },
+  {
+    "file": "06_Alarm_Detayi.png",
+    "route": "/app/alarms/LS-1042",
+    "title": "LogScope · Alarm merkezi",
+    "text_chars": 1499,
+    "size_kb": 147,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1165,
+      "sections": 2
+    }
+  },
+  {
+    "file": "07_Veri_Kaynaklari.png",
+    "route": "/app/sources",
+    "title": "LogScope · Veri kaynakları",
+    "text_chars": 1751,
+    "size_kb": 164,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1098,
+      "sections": 2
+    }
+  },
+  {
+    "file": "08_Raporlar.png",
+    "route": "/app/reports",
+    "title": "LogScope · Raporlar",
+    "text_chars": 1315,
+    "size_kb": 150,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1104,
+      "sections": 2
+    }
+  },
+  {
+    "file": "09_Ayarlar.png",
+    "route": "/app/settings",
+    "title": "LogScope · Ayarlar",
+    "text_chars": 1345,
+    "size_kb": 132,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 990,
+      "sections": 2
+    }
+  },
+  {
+    "file": "10_Giris.png",
+    "route": "/login",
+    "title": "LogScope · Giriş",
+    "text_chars": 506,
+    "size_kb": 251,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 990,
+      "sections": 0
+    }
+  },
+  {
+    "file": "11_Kayit_Ol.png",
+    "route": "/register",
+    "title": "LogScope · Kayıt ol",
+    "text_chars": 530,
+    "size_kb": 73,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1025,
+      "sections": 1
+    }
+  },
+  {
+    "file": "12_Sifre_Sifirlama.png",
+    "route": "/reset-password",
+    "title": "LogScope · Şifre sıfırlama",
+    "text_chars": 379,
+    "size_kb": 57,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 990,
+      "sections": 1
+    }
+  },
+  {
+    "file": "13_Fiyatlandirma.png",
+    "route": "/pricing",
+    "title": "LogScope · Paketler",
+    "text_chars": 1107,
+    "size_kb": 127,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1108,
+      "sections": 1
+    }
+  },
+  {
+    "file": "14_Ilk_Kurulum.png",
+    "route": "/app/onboarding",
+    "title": "LogScope · İlk kurulum",
+    "text_chars": 1100,
+    "size_kb": 125,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 990,
+      "sections": 2
+    }
+  },
+  {
+    "file": "15_Entegrasyonlar.png",
+    "route": "/app/integrations",
+    "title": "LogScope · Entegrasyonlar",
+    "text_chars": 1790,
+    "size_kb": 165,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1193,
+      "sections": 2
+    }
+  },
+  {
+    "file": "16_Ekip_ve_Yetkiler.png",
+    "route": "/app/team",
+    "title": "LogScope · Ekip ve yetkiler",
+    "text_chars": 1168,
+    "size_kb": 122,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 990,
+      "sections": 2
+    }
+  },
+  {
+    "file": "17_Bildirim_Merkezi.png",
+    "route": "/app/notifications",
+    "title": "LogScope · Bildirim merkezi",
+    "text_chars": 1439,
+    "size_kb": 143,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1212,
+      "sections": 2
+    }
+  },
+  {
+    "file": "18_Yardim_Merkezi.png",
+    "route": "/app/help",
+    "title": "LogScope · Yardım merkezi",
+    "text_chars": 1771,
+    "size_kb": 157,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1371,
+      "sections": 2
+    }
+  },
+  {
+    "file": "19_Abonelik_ve_Faturalandirma.png",
+    "route": "/app/billing",
+    "title": "LogScope · Abonelik ve faturalandırma",
+    "text_chars": 1170,
+    "size_kb": 134,
+    "blank": false,
+    "dom": {
+      "w": 1440,
+      "h": 1074,
+      "sections": 2
+    }
+  }
+]
