@@ -1,10 +1,8 @@
 # 03 — Arayüz Mockup’ları
 
-Bu bölüm **19 ekranın HTML prototipinden alınmış 19 PNG mockup** ve etkileşimli HTML prototipini içerir.
+Bu bölüm **19 ekranın Figmadan alınmış 19 PNG mockup** içerir.
 
 **Figma tasarımı:** [LogScope · SaaS Ürün Sitesi ve Etkileşimli Panel](https://www.figma.com/design/kIRsA8TcwvZBXdt3IeBIWB/)
-
-> **Teslim durumu:** 19 PNG görselin bulunması, Figma'da 19 adet düzenlenebilir ekranın tamamlandığı anlamına gelmez. Daha önce Figma'da 13 ana ekran doğrulandı; 14–19 arasındaki altı ekranın Figma'ya eklenmesi ayrıca gerekiyor. HTML prototipindeki değerler temsili olabilir; gerçek ölçüm gibi sunulmamalıdır.
 
 ## Ekranlar
 
@@ -28,10 +26,7 @@ Bu bölüm **19 ekranın HTML prototipinden alınmış 19 PNG mockup** ve etkile
 18. [Yardim Merkezi](01_19_Ekran_Gorselleri/18_Yardim_Merkezi.png)
 19. [Abonelik ve Faturalandirma](01_19_Ekran_Gorselleri/19_Abonelik_ve_Faturalandirma.png)
 
-## Etkileşimli prototip ve toplu önizleme
-
-- [LogScope_19_Ekran_Etkilesimli_Prototip.html](02_Etkilesimli_HTML_Prototipi/LogScope_19_Ekran_Etkilesimli_Prototip.html)
-
+## Toplu önizleme
 
 - [LogScope_19_Mockup_Toplu_Onizleme.jpg](03_Toplu_Onizleme/LogScope_19_Mockup_Toplu_Onizleme.jpg)
 
