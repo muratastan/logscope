@@ -1,0 +1,32 @@
+{
+  "storage": "ephemeral SQLite (not PostgreSQL)",
+  "source": "offline statistical synthetic JSONL, NOT Locust HTTP workload",
+  "upload": {
+    "ok": true,
+    "batch": 1,
+    "accepted": 142726,
+    "rejected": 0,
+    "note": "Yalnız izinli alanlar kaydedildi; loglarda etiket bulunmaz. Analizi ayrıca başlatın."
+  },
+  "stored_events": 142726,
+  "analysis": {
+    "minutes": 1200,
+    "alerts": 5,
+    "mode": "ingested_unlabeled_analysis"
+  },
+  "traffic_windows": {
+    "count": 1200,
+    "total_events": 142726,
+    "source": "imported_jsonl",
+    "last_p95_ms": 191.678
+  },
+  "elapsed_seconds": {
+    "import": 2.63,
+    "analysis": 2.09
+  },
+  "http_codes": {
+    "login": 200,
+    "ingest": 200,
+    "analyze": 200
+  }
+}

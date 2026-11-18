@@ -1,0 +1,19 @@
+# HAFTA 4: Local development only. No public service exposure.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: logscope
+      POSTGRES_USER: logscope_dev
+      POSTGRES_PASSWORD: ${LOGSCOPE_DB_PASSWORD:?Create local .env first}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - logscope_week4_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U logscope_dev -d logscope"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  logscope_week4_db:

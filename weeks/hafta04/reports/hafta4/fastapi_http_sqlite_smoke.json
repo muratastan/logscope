@@ -1,0 +1,18 @@
+{
+  "source": "LOCAL_FASTAPI_HTTP_SQLITE_ONLY",
+  "not_postgresql_proof": true,
+  "http_scheme": "http",
+  "local_port": 58599,
+  "checks": {
+    "real_http_health": true,
+    "real_http_swagger": true,
+    "real_http_openapi": true,
+    "anonymous_unauthorized": true,
+    "real_http_login": true,
+    "authenticated_session": true,
+    "crud_list_alarms": true,
+    "crud_list_team": true,
+    "crud_list_traffic": true
+  },
+  "passed": true
+}

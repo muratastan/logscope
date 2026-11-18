@@ -1,0 +1,32 @@
+{
+  "source": "LIVE_LOCAL_POSTGRESQL_AND_FASTAPI",
+  "postgresql": {
+    "canonical_tables": 27,
+    "canonical_fk_constraints": 41,
+    "operational_ui_users_table": true,
+    "migration_checksums_match": true,
+    "migration_files_recorded": [
+      "01_research_core.sql",
+      "02_product_extensions.sql",
+      "03_demo_plan_seed.sql"
+    ],
+    "passed": true
+  },
+  "api": {
+    "postgresql_backed_api": true,
+    "swagger_docs": true,
+    "openapi_schema": true,
+    "anonymous_rejected": true,
+    "demo_login": true,
+    "session_and_workspace_role": true,
+    "read_alarms": true,
+    "read_team": true,
+    "read_traffic_windows": true,
+    "crud_create_or_update_integration": true,
+    "crud_read_integration": true,
+    "logout": true,
+    "logout_revokes_auth": true
+  },
+  "passed": true,
+  "notes": "Local-only acceptance. Execute role permission pytest separately; this does not prove production security."
+}
