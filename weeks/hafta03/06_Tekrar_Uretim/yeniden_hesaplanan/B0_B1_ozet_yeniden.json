@@ -1,0 +1,51 @@
+{
+  "origin": "OFFLINE_SIMULATION_NOT_REAL_HTTP",
+  "test_only": {
+    "B0": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "normal_fpr": 0.05,
+      "average_precision": 0.3845,
+      "tn": 114,
+      "fp": 6,
+      "fn": 120,
+      "tp": 0,
+      "alerts": 6,
+      "threshold": 1.978771,
+      "bootstrap_exploratory": {
+        "f1_95ci": [
+          0.0,
+          0.0
+        ],
+        "normal_fpr_95ci": [
+          0.017,
+          0.0987
+        ]
+      }
+    },
+    "B1": {
+      "precision": 0.9417,
+      "recall": 0.9417,
+      "f1": 0.9417,
+      "normal_fpr": 0.0583,
+      "average_precision": 0.9873,
+      "tn": 113,
+      "fp": 7,
+      "fn": 7,
+      "tp": 113,
+      "alerts": 120,
+      "threshold": 0.919444,
+      "bootstrap_exploratory": {
+        "f1_95ci": [
+          0.9115,
+          0.9711
+        ],
+        "normal_fpr_95ci": [
+          0.0194,
+          0.1086
+        ]
+      }
+    }
+  }
+}

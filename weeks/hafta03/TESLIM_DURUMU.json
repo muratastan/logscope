@@ -1,0 +1,27 @@
+{
+  "period": "IP3-week3",
+  "offline_simulated_records": 146435,
+  "offline_windows": 1200,
+  "offline_scenarios": 8,
+  "offline_seeds": 5,
+  "offline_split_windows": {
+    "train": 720,
+    "validation": 240,
+    "test": 240
+  },
+  "offline_metrics": {
+    "B0_F1": 0.0,
+    "B1_F1": 0.9417,
+    "B1_normal_FPR": 0.0583
+  },
+  "user_reported_short_live_locust": {
+    "scenarios_passed": 8,
+    "scenarios_total": 8,
+    "http_logs": 10814,
+    "report_in_this_archive": false
+  },
+  "long_live_8x5_matrix_verified": false,
+  "real_http_120000_verified": false,
+  "real_http_windows_1200_verified": false,
+  "notes": "User-reported short live test from chat screenshot; raw output needs to be copied from local machine. Offline metrics are NOT live performance."
+}

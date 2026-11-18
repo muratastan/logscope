@@ -1,0 +1,3 @@
+﻿model,precision,recall,f1,normal_fpr,tp,fp,tn,fn,provenance
+B0,0.0,0.0,0.0,0.05,0,6,114,120,OFFLINE_SIMULATION_NOT_REAL_HTTP
+B1,0.9417,0.9417,0.9417,0.0583,113,7,113,7,OFFLINE_SIMULATION_NOT_REAL_HTTP

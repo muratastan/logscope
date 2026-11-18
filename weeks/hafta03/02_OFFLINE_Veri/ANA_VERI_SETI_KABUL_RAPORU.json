@@ -1,0 +1,46 @@
+{
+  "source_type": "OFFLINE_SIMULATION_NOT_REAL_HTTP",
+  "passed_offline_schema_and_volume": true,
+  "passed_real_django_locust_requirement": false,
+  "checks": {
+    "event_rows_at_least_120000": true,
+    "logical_minute_windows_at_least_1200": true,
+    "distinct_seeds_equal_5": true,
+    "all_8_scenarios": true,
+    "60_20_20_split": true,
+    "valid_private_fields_and_unique_uids": true,
+    "event_minute_counts_match_manifest": true,
+    "seed_partition_isolated": true
+  },
+  "simulated_events": 146435,
+  "simulated_minute_windows": 1200,
+  "seeds": {
+    "11": 240,
+    "23": 240,
+    "42": 240,
+    "71": 240,
+    "97": 240
+  },
+  "scenario_minute_counts": {
+    "normal_steady": 150,
+    "anomaly_latency": 150,
+    "normal_campaign": 150,
+    "anomaly_rare_route": 150,
+    "anomaly_5xx": 150,
+    "normal_hourly_rise": 150,
+    "anomaly_login_fail": 150,
+    "normal_route_mix": 150
+  },
+  "split_minute_counts": {
+    "train": 720,
+    "validation": 240,
+    "test": 240
+  },
+  "invalid_or_duplicate_events": 0,
+  "extra_unknown_event_minutes": 0,
+  "sha256": {
+    "jsonl": "f3bde1f0893c8fe81ef586c7455bc4919a4ea5389724ea0515ccaead45ee46e2",
+    "manifest": "16f3fcd5e0bc7db17bbe6847d1acd5d0e8428af5b0e53295e9cfb9d3f7ce6f6e"
+  },
+  "explicit_note": "Full live HTTP/Locust requirement remains OPEN; generation took no 20-hour real-time period."
+}
