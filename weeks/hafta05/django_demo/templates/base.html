@@ -1,0 +1,11 @@
+{% load static %}
+<!doctype html><html lang="tr"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{% block title %}LogScope Django Deney{% endblock %}</title>
+<link href="{% static 'site.css' %}" rel="stylesheet"></head>
+<body><header class="top"><a href="/" class="logo">◈ LogScope<span> / Trafik Deney Ortamı</span></a>
+<nav><a href="/catalog/">Katalog</a><a href="/search/">Arama</a><a href="/forms/checkout/">Form</a><a href="/auth/login/">Giriş rotası</a></nav></header>
+<main class="wrap"><p class="tag">KONTROLLÜ SENTETİK TEST UYGULAMASI</p>
+{% block content %}{% endblock %}</main>
+<footer>Bu site gerçek kullanıcı, parola, ödeme veya kişisel veri toplamaz. HTTP kayıtları anonim JSONL oluşturmak için üretilir.</footer>
+</body></html>

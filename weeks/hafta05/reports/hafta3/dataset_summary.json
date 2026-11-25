@@ -1,0 +1,25 @@
+{
+  "mode": "offline_statistical_simulation_not_locust",
+  "seed": 42,
+  "windows": 1200,
+  "total_requests": 142726,
+  "scenario_counts": {
+    "normal_steady": 15148,
+    "anomaly_latency": 15330,
+    "normal_campaign": 28361,
+    "anomaly_rare_route": 15450,
+    "anomaly_5xx": 17488,
+    "normal_hourly_rise": 18879,
+    "anomaly_login_fail": 16677,
+    "normal_route_mix": 15393
+  },
+  "data_file": "reports/hafta3/logscope_offline_seed42_1200m.jsonl",
+  "labels_file": "reports/hafta3/scenario_manifest_seed42.csv",
+  "session_groups": 9909,
+  "split": {
+    "train": 720,
+    "validation": 240,
+    "test": 240
+  },
+  "warning": "Generated statistical synthetic events without sending live HTTP requests. Do not label as Django/Locust test results."
+}

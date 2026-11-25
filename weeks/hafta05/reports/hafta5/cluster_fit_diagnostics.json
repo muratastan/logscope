@@ -1,0 +1,517 @@
+[
+  {
+    "seed": 11,
+    "dataset": "statistically simulated aggregate windows; not live Django/Locust",
+    "windows": 1200,
+    "total_requests": 142572,
+    "split": {
+      "train": 720,
+      "validation": 240,
+      "test": 240
+    },
+    "kmeans": {
+      "selected_k": 2,
+      "train_silhouette": 0.515,
+      "candidates": {
+        "2": 0.515,
+        "3": 0.2839,
+        "4": 0.2879,
+        "5": 0.2786,
+        "6": 0.1884
+      }
+    },
+    "dbscan": {
+      "eps": 1.18625,
+      "min_samples": 5,
+      "train_core_samples": 288,
+      "train_noise_ratio": 0.0389,
+      "refit_on_test": false
+    },
+    "model_features": [
+      "log_count",
+      "rate_4xx",
+      "rate_5xx",
+      "log_p50_ms",
+      "log_p95_ms",
+      "session_ratio",
+      "route_diversity",
+      "interval_sec",
+      "rare_route_ratio",
+      "login_failure_ratio"
+    ],
+    "results": {
+      "B0_robust_volume_z": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "normal_fpr": 0.0667,
+        "pr_auc": 0.3779,
+        "tn": 112,
+        "fp": 8,
+        "fn": 120,
+        "tp": 0,
+        "threshold": 2.11056
+      },
+      "KMeans": {
+        "precision": 0.9836,
+        "recall": 1.0,
+        "f1": 0.9917,
+        "normal_fpr": 0.0167,
+        "pr_auc": 1.0,
+        "tn": 118,
+        "fp": 2,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.96944
+      },
+      "DBSCAN_core": {
+        "precision": 0.9677,
+        "recall": 1.0,
+        "f1": 0.9836,
+        "normal_fpr": 0.0333,
+        "pr_auc": 1.0,
+        "tn": 116,
+        "fp": 4,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.96944
+      },
+      "B1_IsolationForest": {
+        "precision": 0.6,
+        "recall": 0.05,
+        "f1": 0.0923,
+        "normal_fpr": 0.0333,
+        "pr_auc": 0.6451,
+        "tn": 116,
+        "fp": 4,
+        "fn": 114,
+        "tp": 6,
+        "threshold": 0.98889
+      },
+      "B1_plus_D": {
+        "precision": 0.875,
+        "recall": 0.175,
+        "f1": 0.2917,
+        "normal_fpr": 0.025,
+        "pr_auc": 0.7733,
+        "tn": 117,
+        "fp": 3,
+        "fn": 99,
+        "tp": 21,
+        "threshold": 0.96564
+      }
+    }
+  },
+  {
+    "seed": 23,
+    "dataset": "statistically simulated aggregate windows; not live Django/Locust",
+    "windows": 1200,
+    "total_requests": 142838,
+    "split": {
+      "train": 720,
+      "validation": 240,
+      "test": 240
+    },
+    "kmeans": {
+      "selected_k": 2,
+      "train_silhouette": 0.5147,
+      "candidates": {
+        "2": 0.5147,
+        "3": 0.2915,
+        "4": 0.2853,
+        "5": 0.2655,
+        "6": 0.174
+      }
+    },
+    "dbscan": {
+      "eps": 1.19213,
+      "min_samples": 5,
+      "train_core_samples": 288,
+      "train_noise_ratio": 0.0333,
+      "refit_on_test": false
+    },
+    "model_features": [
+      "log_count",
+      "rate_4xx",
+      "rate_5xx",
+      "log_p50_ms",
+      "log_p95_ms",
+      "session_ratio",
+      "route_diversity",
+      "interval_sec",
+      "rare_route_ratio",
+      "login_failure_ratio"
+    ],
+    "results": {
+      "B0_robust_volume_z": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "normal_fpr": 0.0583,
+        "pr_auc": 0.3691,
+        "tn": 113,
+        "fp": 7,
+        "fn": 120,
+        "tp": 0,
+        "threshold": 2.22467
+      },
+      "KMeans": {
+        "precision": 0.9836,
+        "recall": 1.0,
+        "f1": 0.9917,
+        "normal_fpr": 0.0167,
+        "pr_auc": 1.0,
+        "tn": 118,
+        "fp": 2,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.97222
+      },
+      "DBSCAN_core": {
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1": 0.9796,
+        "normal_fpr": 0.0417,
+        "pr_auc": 0.9917,
+        "tn": 115,
+        "fp": 5,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.96667
+      },
+      "B1_IsolationForest": {
+        "precision": 0.7407,
+        "recall": 0.1667,
+        "f1": 0.2721,
+        "normal_fpr": 0.0583,
+        "pr_auc": 0.6675,
+        "tn": 113,
+        "fp": 7,
+        "fn": 100,
+        "tp": 20,
+        "threshold": 0.98333
+      },
+      "B1_plus_D": {
+        "precision": 0.9024,
+        "recall": 0.3083,
+        "f1": 0.4596,
+        "normal_fpr": 0.0333,
+        "pr_auc": 0.7912,
+        "tn": 116,
+        "fp": 4,
+        "fn": 83,
+        "tp": 37,
+        "threshold": 0.96127
+      }
+    }
+  },
+  {
+    "seed": 42,
+    "dataset": "statistically simulated aggregate windows; not live Django/Locust",
+    "windows": 1200,
+    "total_requests": 142726,
+    "split": {
+      "train": 720,
+      "validation": 240,
+      "test": 240
+    },
+    "kmeans": {
+      "selected_k": 2,
+      "train_silhouette": 0.5195,
+      "candidates": {
+        "2": 0.5195,
+        "3": 0.2789,
+        "4": 0.2687,
+        "5": 0.2561,
+        "6": 0.1812
+      }
+    },
+    "dbscan": {
+      "eps": 1.19831,
+      "min_samples": 5,
+      "train_core_samples": 288,
+      "train_noise_ratio": 0.0222,
+      "refit_on_test": false
+    },
+    "model_features": [
+      "log_count",
+      "rate_4xx",
+      "rate_5xx",
+      "log_p50_ms",
+      "log_p95_ms",
+      "session_ratio",
+      "route_diversity",
+      "interval_sec",
+      "rare_route_ratio",
+      "login_failure_ratio"
+    ],
+    "results": {
+      "B0_robust_volume_z": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "normal_fpr": 0.0667,
+        "pr_auc": 0.384,
+        "tn": 112,
+        "fp": 8,
+        "fn": 120,
+        "tp": 0,
+        "threshold": 2.44229
+      },
+      "KMeans": {
+        "precision": 0.9449,
+        "recall": 1.0,
+        "f1": 0.9717,
+        "normal_fpr": 0.0583,
+        "pr_auc": 0.9917,
+        "tn": 113,
+        "fp": 7,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.95833
+      },
+      "DBSCAN_core": {
+        "precision": 0.9091,
+        "recall": 1.0,
+        "f1": 0.9524,
+        "normal_fpr": 0.1,
+        "pr_auc": 1.0,
+        "tn": 108,
+        "fp": 12,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.94444
+      },
+      "B1_IsolationForest": {
+        "precision": 0.6452,
+        "recall": 0.1667,
+        "f1": 0.2649,
+        "normal_fpr": 0.0917,
+        "pr_auc": 0.6729,
+        "tn": 109,
+        "fp": 11,
+        "fn": 100,
+        "tp": 20,
+        "threshold": 0.94722
+      },
+      "B1_plus_D": {
+        "precision": 0.84,
+        "recall": 0.35,
+        "f1": 0.4941,
+        "normal_fpr": 0.0667,
+        "pr_auc": 0.7691,
+        "tn": 112,
+        "fp": 8,
+        "fn": 78,
+        "tp": 42,
+        "threshold": 0.9202
+      }
+    }
+  },
+  {
+    "seed": 71,
+    "dataset": "statistically simulated aggregate windows; not live Django/Locust",
+    "windows": 1200,
+    "total_requests": 142720,
+    "split": {
+      "train": 720,
+      "validation": 240,
+      "test": 240
+    },
+    "kmeans": {
+      "selected_k": 2,
+      "train_silhouette": 0.5235,
+      "candidates": {
+        "2": 0.5235,
+        "3": 0.2859,
+        "4": 0.2758,
+        "5": 0.2654,
+        "6": 0.176
+      }
+    },
+    "dbscan": {
+      "eps": 1.17566,
+      "min_samples": 5,
+      "train_core_samples": 288,
+      "train_noise_ratio": 0.0556,
+      "refit_on_test": false
+    },
+    "model_features": [
+      "log_count",
+      "rate_4xx",
+      "rate_5xx",
+      "log_p50_ms",
+      "log_p95_ms",
+      "session_ratio",
+      "route_diversity",
+      "interval_sec",
+      "rare_route_ratio",
+      "login_failure_ratio"
+    ],
+    "results": {
+      "B0_robust_volume_z": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "normal_fpr": 0.0333,
+        "pr_auc": 0.3786,
+        "tn": 116,
+        "fp": 4,
+        "fn": 120,
+        "tp": 0,
+        "threshold": 2.24448
+      },
+      "KMeans": {
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1": 0.9796,
+        "normal_fpr": 0.0417,
+        "pr_auc": 0.9836,
+        "tn": 115,
+        "fp": 5,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.95833
+      },
+      "DBSCAN_core": {
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "normal_fpr": 0.125,
+        "pr_auc": 0.9836,
+        "tn": 105,
+        "fp": 15,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.92778
+      },
+      "B1_IsolationForest": {
+        "precision": 0.5556,
+        "recall": 0.0833,
+        "f1": 0.1449,
+        "normal_fpr": 0.0667,
+        "pr_auc": 0.615,
+        "tn": 112,
+        "fp": 8,
+        "fn": 110,
+        "tp": 10,
+        "threshold": 0.97778
+      },
+      "B1_plus_D": {
+        "precision": 0.7872,
+        "recall": 0.3083,
+        "f1": 0.4431,
+        "normal_fpr": 0.0833,
+        "pr_auc": 0.7221,
+        "tn": 110,
+        "fp": 10,
+        "fn": 83,
+        "tp": 37,
+        "threshold": 0.93704
+      }
+    }
+  },
+  {
+    "seed": 97,
+    "dataset": "statistically simulated aggregate windows; not live Django/Locust",
+    "windows": 1200,
+    "total_requests": 143170,
+    "split": {
+      "train": 720,
+      "validation": 240,
+      "test": 240
+    },
+    "kmeans": {
+      "selected_k": 2,
+      "train_silhouette": 0.5146,
+      "candidates": {
+        "2": 0.5146,
+        "3": 0.2795,
+        "4": 0.2683,
+        "5": 0.2622,
+        "6": 0.1805
+      }
+    },
+    "dbscan": {
+      "eps": 1.20487,
+      "min_samples": 5,
+      "train_core_samples": 288,
+      "train_noise_ratio": 0.0472,
+      "refit_on_test": false
+    },
+    "model_features": [
+      "log_count",
+      "rate_4xx",
+      "rate_5xx",
+      "log_p50_ms",
+      "log_p95_ms",
+      "session_ratio",
+      "route_diversity",
+      "interval_sec",
+      "rare_route_ratio",
+      "login_failure_ratio"
+    ],
+    "results": {
+      "B0_robust_volume_z": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "normal_fpr": 0.0583,
+        "pr_auc": 0.3976,
+        "tn": 113,
+        "fp": 7,
+        "fn": 120,
+        "tp": 0,
+        "threshold": 2.18889
+      },
+      "KMeans": {
+        "precision": 0.9091,
+        "recall": 1.0,
+        "f1": 0.9524,
+        "normal_fpr": 0.1,
+        "pr_auc": 1.0,
+        "tn": 108,
+        "fp": 12,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.89444
+      },
+      "DBSCAN_core": {
+        "precision": 0.9677,
+        "recall": 1.0,
+        "f1": 0.9836,
+        "normal_fpr": 0.0333,
+        "pr_auc": 1.0,
+        "tn": 116,
+        "fp": 4,
+        "fn": 0,
+        "tp": 120,
+        "threshold": 0.96111
+      },
+      "B1_IsolationForest": {
+        "precision": 0.7188,
+        "recall": 0.1917,
+        "f1": 0.3026,
+        "normal_fpr": 0.075,
+        "pr_auc": 0.7042,
+        "tn": 111,
+        "fp": 9,
+        "fn": 97,
+        "tp": 23,
+        "threshold": 0.95556
+      },
+      "B1_plus_D": {
+        "precision": 0.84,
+        "recall": 0.35,
+        "f1": 0.4941,
+        "normal_fpr": 0.0667,
+        "pr_auc": 0.8227,
+        "tn": 112,
+        "fp": 8,
+        "fn": 78,
+        "tp": 42,
+        "threshold": 0.92233
+      }
+    }
+  }
+]

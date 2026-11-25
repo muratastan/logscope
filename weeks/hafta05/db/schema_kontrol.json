@@ -1,0 +1,9 @@
+{
+  "tables": 27,
+  "core_tables": 13,
+  "product_tables": 14,
+  "fields": 225,
+  "foreign_keys": 41,
+  "verified_references": 41,
+  "database_executed": false
+}

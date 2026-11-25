@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Ürün kataloğu</h1><p>Bu sayfanın URL şablonu <code>/catalog/</code> olarak loglanır.</p><div class="grid">{% for item in items %}<article class="card"><span>{{item.category}}</span><h3>{{item.name}}</h3><a href="/items/{{item.id}}/">İncele →</a></article>{% endfor %}</div>{% endblock %}
