@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-29T13:39:53Z" agent="LogScope Drawio Compatible Export" version="24.7.17" type="device">
+  <diagram id="page16" name="16 ER Veri">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page16_scenario_runs" value="scenario_runs&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_ingestion_batches" value="ingestion_batches&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;     state&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_synthetic_sessions" value="synthetic_sessions&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  scenario_run_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_http_events" value="http_events&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  ingestion_batch_id&lt;br/&gt;FK  scenario_run_id&lt;br/&gt;FK  synthetic_session_id&lt;br/&gt;     occurred_at&lt;br/&gt;     route_template" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="685" width="605" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_traffic_windows" value="traffic_windows&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  scenario_run_id&lt;br/&gt;     route_template" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_16_foot" value="Alanların tamamı ve 41 yabancı anahtar için tek bağlı klasik Chen ER sayfasına ve CSV veri sözlüğüne bakınız." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=17;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1396" width="2190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_e1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page16_scenario_runs" target="page16_synthetic_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_e2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page16_ingestion_batches" target="page16_http_events">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_e3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page16_scenario_runs" target="page16_http_events">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_e4" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page16_synthetic_sessions" target="page16_http_events">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page16_e5" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page16_scenario_runs" target="page16_traffic_windows">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page17" name="17 ER Modeller">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page17_model_versions" value="model_versions&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_learned_patterns" value="learned_patterns&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  model_version_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_model_scores" value="model_scores&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  window_id&lt;br/&gt;FK  model_version_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_alarms" value="alarms&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  window_id&lt;br/&gt;FK  model_version_id&lt;br/&gt;     combined_score&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_alarm_signals" value="alarm_signals&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  alarm_id&lt;br/&gt;FK  model_version_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_alarm_reviews" value="alarm_reviews&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  alarm_id&lt;br/&gt;FK  reviewer_user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_evaluation_results" value="evaluation_results&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  model_version_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1110" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_traffic_windows" value="traffic_windows&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  scenario_run_id&lt;br/&gt;     route_template" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="1110" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_17_foot" value="Alanların tamamı ve 41 yabancı anahtar için tek bağlı klasik Chen ER sayfasına ve CSV veri sözlüğüne bakınız." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=17;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1396" width="2190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_model_versions" target="page17_learned_patterns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_traffic_windows" target="page17_model_scores">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_model_versions" target="page17_model_scores">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e4" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_traffic_windows" target="page17_alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e5" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_model_versions" target="page17_alarms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e6" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_alarms" target="page17_alarm_signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e7" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_model_versions" target="page17_alarm_signals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e8" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_alarms" target="page17_alarm_reviews">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page17_e9" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page17_model_versions" target="page17_evaluation_results">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page18" name="18 ER Kimlik">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page18_users" value="users&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;     email" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_workspaces" value="workspaces&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  owner_user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_workspace_memberships" value="workspace_memberships&lt;br/&gt;──────────────────&lt;br/&gt;PK  workspace_id&lt;br/&gt;PK  user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_user_invitations" value="user_invitations&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id&lt;br/&gt;FK  inviter_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_password_reset_requests" value="password_reset_requests&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_api_credentials" value="api_credentials&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_onboarding_progress" value="onboarding_progress&lt;br/&gt;──────────────────&lt;br/&gt;PK  workspace_id&lt;br/&gt;PK  step_code&lt;br/&gt;FK  changed_by_user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="1110" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_18_foot" value="Alanların tamamı ve 41 yabancı anahtar için tek bağlı klasik Chen ER sayfasına ve CSV veri sözlüğüne bakınız." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=17;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1396" width="2190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_users" target="page18_workspaces">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_workspaces" target="page18_workspace_memberships">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_users" target="page18_workspace_memberships">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e4" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_workspaces" target="page18_user_invitations">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e5" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_users" target="page18_user_invitations">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e6" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_users" target="page18_password_reset_requests">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e7" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_workspaces" target="page18_api_credentials">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e8" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_workspaces" target="page18_onboarding_progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page18_e9" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page18_users" target="page18_onboarding_progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page19" name="19 ER Islemler">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page19_workspaces" value="workspaces&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  owner_user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_integrations" value="integrations&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_notifications" value="notifications&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id&lt;br/&gt;FK  user_id&lt;br/&gt;FK  related_alarm_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_notification_preferences" value="notification_preferences&lt;br/&gt;──────────────────&lt;br/&gt;PK  workspace_id&lt;br/&gt;PK  user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_report_exports" value="report_exports&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id&lt;br/&gt;FK  requested_by" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_audit_events" value="audit_events&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id&lt;br/&gt;FK  actor_user_id&lt;br/&gt;     occurred_at" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_19_foot" value="Alanların tamamı ve 41 yabancı anahtar için tek bağlı klasik Chen ER sayfasına ve CSV veri sözlüğüne bakınız." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=17;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1396" width="2190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_e1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page19_workspaces" target="page19_integrations">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_e2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page19_workspaces" target="page19_notifications">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_e3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page19_workspaces" target="page19_notification_preferences">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_e4" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page19_workspaces" target="page19_report_exports">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page19_e5" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page19_workspaces" target="page19_audit_events">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page20" name="20 ER Abonelik">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2420" pageHeight="1540" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page20_workspaces" value="workspaces&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  owner_user_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_product_plans" value="product_plans&lt;br/&gt;──────────────────&lt;br/&gt;PK  id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="875" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_workspace_subscriptions" value="workspace_subscriptions&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  workspace_id&lt;br/&gt;FK  plan_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1655" y="260" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_invoices" value="invoices&lt;br/&gt;──────────────────&lt;br/&gt;PK  id&lt;br/&gt;FK  subscription_id" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A9BAC8;strokeWidth=2;fontColor=#234055;fontSize=16;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="95" y="685" width="605" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_20_foot" value="Alanların tamamı ve 41 yabancı anahtar için tek bağlı klasik Chen ER sayfasına ve CSV veri sözlüğüne bakınız." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=17;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1396" width="2190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_e1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page20_workspaces" target="page20_workspace_subscriptions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_e2" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page20_product_plans" target="page20_workspace_subscriptions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page20_e3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#537CA4;strokeWidth=1.9;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page20_workspace_subscriptions" target="page20_invoices">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

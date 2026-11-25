@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI (Python debugger)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/run_api.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Django (Python debugger)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/django_demo/manage.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "cwd": "${workspaceFolder}/django_demo",
+      "args": [
+        "runserver",
+        "127.0.0.1:8001",
+        "--noreload"
+      ],
+      "django": true,
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f7fb"/>
+<rect x="0" y="0" width="242" height="900" rx="0" fill="#12243c"/>
+<text x="27" y="50" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#ffffff" text-anchor="start">LogScope</text>
+<text x="27" y="76" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#a5c0d4" text-anchor="start">BAĞLAM DUYARLI LOG ANALİZİ</text>
+<text x="30" y="132" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="132" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Genel Bakış</text>
+<text x="30" y="185" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="185" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Trafik İzleme</text>
+<rect x="16" y="212" width="211" height="43" rx="10" fill="#25405e"/>
+<text x="30" y="238" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="238" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#ffffff" text-anchor="start">Model Analizi</text>
+<text x="30" y="291" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="291" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Alarm Merkezi</text>
+<text x="30" y="344" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="344" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Alarm Detayı</text>
+<line x1="244" y1="78" x2="1440" y2="78" stroke="#dfe7ef" stroke-width="1"/>
+<rect x="242" y="0" width="1198" height="78" rx="0" fill="white"/>
+<text x="281" y="47" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#61738d" text-anchor="start">LogScope / Model Analizi</text>
+<rect x="1120" y="24" width="250" height="31" rx="15" fill="#fff5df"/>
+<text x="1245" y="45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#936418" text-anchor="middle">TEMSİLİ VERİ · MOCKUP</text>
+<text x="282" y="154" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#172a45" text-anchor="start">Model Analizi</text>
+<text x="282" y="186" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">M1-M3 sinyalleri ve B0-B2 deney koşulları.</text>
+<rect x="282" y="222" width="360" height="179" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="304" y="256" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">M1 · Trafik profili</text>
+<text x="304" y="288" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0b8873" text-anchor="start">K-Means / DBSCAN</text>
+<text x="304" y="327" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">Saat ve rota yoğunluk kümeleri</text>
+<rect x="661" y="222" width="360" height="179" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="683" y="256" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">M2 · Anomali</text>
+<text x="683" y="288" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0b8873" text-anchor="start">Isolation Forest</text>
+<text x="683" y="327" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">Bir dakikalık pencere sapması</text>
+<rect x="1040" y="222" width="360" height="179" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="1062" y="256" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">M3 · Örüntüler</text>
+<text x="1062" y="288" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0b8873" text-anchor="start">PrefixSpan</text>
+<text x="1062" y="327" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">Normal oturum geçişleri</text>
+<rect x="282" y="427" width="1119" height="382" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="304" y="461" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">Deney koşullarının karşılaştırılması</text>
+<text x="304" y="483" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#61738d" text-anchor="start">Gerçek F1 ve FPR değerleri deneyler tamamlandığında doldurulacaktır.</text>
+<rect x="307" y="504" width="1068" height="43" rx="5" fill="#f4f8fc"/>
+<text x="319" y="531" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#61738d" text-anchor="start">Koşul</text>
+<text x="439" y="531" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#61738d" text-anchor="start">İçerik</text>
+<text x="757" y="531" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#61738d" text-anchor="start">F1</text>
+<text x="873" y="531" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#61738d" text-anchor="start">Normal FPR</text>
+<text x="1018" y="531" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#61738d" text-anchor="start">Karşılaştırma amacı</text>
+<line x1="307" y1="547" x2="1375" y2="547" stroke="#e5edf3" stroke-width="1"/>
+<text x="319" y="576" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B0</text>
+<text x="439" y="576" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Sağlam z-skor</text>
+<text x="757" y="576" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="873" y="576" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="1018" y="576" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Temel eşik</text>
+<line x1="307" y1="590" x2="1375" y2="590" stroke="#e5edf3" stroke-width="1"/>
+<text x="319" y="619" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1</text>
+<text x="439" y="619" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Isolation Forest</text>
+<text x="757" y="619" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="873" y="619" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="1018" y="619" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Temel model</text>
+<line x1="307" y1="633" x2="1375" y2="633" stroke="#e5edf3" stroke-width="1"/>
+<text x="319" y="662" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1+D</text>
+<text x="439" y="662" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1 + M1 yoğunluk</text>
+<text x="757" y="662" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="873" y="662" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="1018" y="662" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Yoğunluk katkısı</text>
+<line x1="307" y1="676" x2="1375" y2="676" stroke="#e5edf3" stroke-width="1"/>
+<text x="319" y="705" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1+S</text>
+<text x="439" y="705" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1 + M3 geçiş</text>
+<text x="757" y="705" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="873" y="705" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="1018" y="705" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Oturum katkısı</text>
+<line x1="307" y1="719" x2="1375" y2="719" stroke="#e5edf3" stroke-width="1"/>
+<text x="319" y="748" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B2</text>
+<text x="439" y="748" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">B1 + M1 + M3</text>
+<text x="757" y="748" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="873" y="748" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">—</text>
+<text x="1018" y="748" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#172a45" text-anchor="start">Hibrit katkısı</text>
+<text x="311" y="787" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#247964" text-anchor="start">Hedefler: F1 ≥0,80 · Normal FPR ≤%5 · %95 güven aralığı · 5 tekrar</text>
+</svg>

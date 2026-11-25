@@ -1,0 +1,7 @@
+{
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.envFile": "${workspaceFolder}/.env",
+  "files.exclude": {"**/__pycache__": true, "**/.pytest_cache": true},
+  "editor.formatOnSave": true,
+  "[python]": {"editor.defaultFormatter": "ms-python.black-formatter"}
+}

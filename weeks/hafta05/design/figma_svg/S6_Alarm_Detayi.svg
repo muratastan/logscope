@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f7fb"/>
+<rect x="0" y="0" width="242" height="900" rx="0" fill="#12243c"/>
+<text x="27" y="50" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#ffffff" text-anchor="start">LogScope</text>
+<text x="27" y="76" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#a5c0d4" text-anchor="start">BAĞLAM DUYARLI LOG ANALİZİ</text>
+<text x="30" y="132" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="132" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Genel Bakış</text>
+<text x="30" y="185" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="185" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Trafik İzleme</text>
+<text x="30" y="238" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="238" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Model Analizi</text>
+<text x="30" y="291" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="291" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#b9cbde" text-anchor="start">Alarm Merkezi</text>
+<rect x="16" y="318" width="211" height="43" rx="10" fill="#25405e"/>
+<text x="30" y="344" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#bbd2df" text-anchor="start">■</text>
+<text x="59" y="344" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#ffffff" text-anchor="start">Alarm Detayı</text>
+<line x1="244" y1="78" x2="1440" y2="78" stroke="#dfe7ef" stroke-width="1"/>
+<rect x="242" y="0" width="1198" height="78" rx="0" fill="white"/>
+<text x="281" y="47" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#61738d" text-anchor="start">LogScope / Alarm Detayı</text>
+<rect x="1120" y="24" width="250" height="31" rx="15" fill="#fff5df"/>
+<text x="1245" y="45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#936418" text-anchor="middle">TEMSİLİ VERİ · MOCKUP</text>
+<text x="282" y="154" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#172a45" text-anchor="start">Alarm Detayı</text>
+<text x="282" y="186" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">Sinyal katkıları, gerekçe ve anonim kanıt kaydı.</text>
+<rect x="282" y="227" width="653" height="560" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="304" y="261" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">A-1042 · Başarısız giriş artışı</text>
+<text x="304" y="307" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#172a45" text-anchor="start">Rota: /auth/login/</text>
+<text x="304" y="355" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#61738d" text-anchor="start">Örnek karar puanı</text>
+<text x="304" y="402" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" fill="#be4b5a" text-anchor="start">0,87</text>
+<text x="540" y="355" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#61738d" text-anchor="start">Model / deney koşulu</text>
+<text x="540" y="391" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">B2 · Demo v0</text>
+<text x="304" y="461" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">Sinyal katkıları · temsili</text>
+<text x="305" y="512" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">M2 · Isolation Forest</text>
+<rect x="304" y="526" width="585" height="11" rx="6" fill="#edf2f8"/>
+<rect x="304" y="526" width="456" height="11" rx="6" fill="#0b987c"/>
+<text x="305" y="580" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">M3 · Geçiş nadirliği</text>
+<rect x="304" y="594" width="585" height="11" rx="6" fill="#edf2f8"/>
+<rect x="304" y="594" width="362" height="11" rx="6" fill="#0b987c"/>
+<text x="305" y="648" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#61738d" text-anchor="start">M1 · Yoğunluk profili</text>
+<rect x="304" y="662" width="585" height="11" rx="6" fill="#edf2f8"/>
+<rect x="304" y="662" width="210" height="11" rx="6" fill="#0b987c"/>
+<rect x="955" y="227" width="446" height="560" rx="14" fill="#ffffff" stroke="#dfe7ef"/>
+<text x="977" y="261" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#172a45" text-anchor="start">Örnek kanıt kaydı</text>
+<rect x="975" y="299" width="406" height="320" rx="10" fill="#12243c"/>
+<text x="995" y="332" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">{</text>
+<text x="995" y="363" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;schema_version&quot;: &quot;1.0&quot;,</text>
+<text x="995" y="394" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;timestamp_utc&quot;: &quot;...Z&quot;,</text>
+<text x="995" y="425" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;route_template&quot;: &quot;/auth/login/&quot;,</text>
+<text x="995" y="456" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;http_method&quot;: &quot;POST&quot;,</text>
+<text x="995" y="487" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;status_code&quot;: 401,</text>
+<text x="995" y="518" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">  &quot;duration_ms&quot;: 140.6</text>
+<text x="995" y="549" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#e3f0f7" text-anchor="start">}</text>
+<rect x="984" y="664" width="142" height="43" rx="9" fill="#eaf2ff"/>
+<text x="1054" y="691" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#172a45" text-anchor="middle">İncelemeye al</text>
+<rect x="1142" y="664" width="105" height="43" rx="9" fill="#0b987c"/>
+<text x="1196" y="691" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">Doğrula</text>
+<rect x="1258" y="664" width="118" height="43" rx="9" fill="#eff3f8"/>
+<text x="1312" y="691" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#172a45" text-anchor="middle">Yanlış alarm</text>
+</svg>

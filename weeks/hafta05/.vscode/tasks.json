@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"01 · Python bağımlılıkları", "type":"shell", "command":"python -m pip install -r requirements-dev.txt", "problemMatcher":[]},
+    {"label":"02 · PostgreSQL (Docker)", "type":"shell", "command":"docker compose up -d postgres", "problemMatcher":[]},
+    {"label":"03 · Django test sitesi :8001", "type":"shell", "command":"python scripts/run_django.py", "isBackground":true, "problemMatcher":[]},
+    {"label":"04 · FastAPI :8000", "type":"shell", "command":"python scripts/run_api.py", "isBackground":true, "problemMatcher":[]},
+    {"label":"05 · React :5173", "type":"shell", "command":"npm run dev --prefix frontend", "isBackground":true, "problemMatcher":[]},
+    {"label":"06 · Locust :8089 (yerel)", "type":"shell", "command":"python scripts/run_locust.py", "isBackground":true, "problemMatcher":[]},
+    {"label":"07 · Testler", "type":"shell", "command":"python -m pytest -q tests/test_fullstack.py tests/test_layout.py", "problemMatcher":[]},
+    {"label":"08 · VS Code klasör kontrolü", "type":"shell", "command":"python scripts/check_structure.py", "problemMatcher":[]}
+  ]
+}
