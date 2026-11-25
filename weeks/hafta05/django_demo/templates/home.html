@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block content %}
+<section class="hero"><h1>LogScope trafik deney ortamı</h1><p>Django üzerindeki ziyaretlerin saat, rota ve yanıt durumu etkilerini Locust ile gözlemlemek için hazırlanmış kontrollü uygulama.</p><div class="actions"><a class="button" href="/catalog/">Kataloğu ziyaret et</a><a class="button outline" href="/search/">Arama yap</a></div></section>
+<div class="grid">{% for item in items %}<article class="card"><span>ÜRÜN {{ item.id }}</span><h3>{{ item.name }}</h3><p>Bu içerik yapay trafik üretiminde kullanılır.</p><a href="/items/{{item.id}}/">Ürün ayrıntısı →</a></article>{% endfor %}</div>
+{% endblock %}

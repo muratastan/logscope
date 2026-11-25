@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "static_checks": {
+    "week2_six_figma_export_screens": true,
+    "week2_jsonl_contract": true,
+    "week2_data_dictionary": true,
+    "week2_erd_drawio": true,
+    "week3_eight_locust_scenarios": true,
+    "week3_1200_offline_windows": true,
+    "week3_five_seed_comparison": true,
+    "week3_real_locust_runner": true,
+    "week3_live_acceptance_gates": true,
+    "week4_pg_migrations": true,
+    "week4_role_auth_and_crud": true,
+    "week4_canonical_pg_importer": true,
+    "week4_swagger": true,
+    "week5_react_routes": true,
+    "week5_clustering_comparison": true,
+    "week5_model_metrics": true,
+    "week5_real_ingested_traffic_route": true,
+    "27_tables_225_columns_41_links": true,
+    "19_screen_route_sources": true
+  },
+  "week3_data_source": "offline statistical simulation, NOT real Django/Locust HTTP workload",
+  "week4_database_verification": "SQLite API tests; PostgreSQL live migration requires local Docker/psycopg",
+  "week5_frontend_verification": "JSX syntax checked; npm install/build and browser rendering require local npm/network"
+}

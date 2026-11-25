@@ -1,0 +1,5 @@
+{"event_uid":"sample-001","occurred_at":"2026-10-28T14:00:00Z","http_method":"GET","route_template":"/catalog/","status_code":200,"duration_ms":136.5,"session_ref":"synthetic-s1","schema_version":"1.0"}
+{"event_uid":"sample-002","occurred_at":"2026-10-28T14:00:14Z","http_method":"GET","route_template":"/search/","status_code":200,"duration_ms":161.2,"session_ref":"synthetic-s1","schema_version":"1.0"}
+{"event_uid":"sample-003","occurred_at":"2026-10-28T14:00:21Z","http_method":"GET","route_template":"/items/{id}/","status_code":200,"duration_ms":216.8,"session_ref":"synthetic-s1","schema_version":"1.0"}
+{"event_uid":"sample-004","occurred_at":"2026-10-28T14:01:05Z","http_method":"POST","route_template":"/auth/login/","status_code":401,"duration_ms":108.7,"session_ref":"synthetic-s2","schema_version":"1.0"}
+{"event_uid":"sample-005","occurred_at":"2026-10-28T14:01:10Z","http_method":"POST","route_template":"/auth/login/","status_code":401,"duration_ms":119.5,"session_ref":"synthetic-s2","schema_version":"1.0"}

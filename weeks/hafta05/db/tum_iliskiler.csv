@@ -1,0 +1,42 @@
+﻿source_table,source_column,referenced_table,referenced_column,relationship
+synthetic_sessions,scenario_run_id,scenario_runs,id,FK
+http_events,ingestion_batch_id,ingestion_batches,id,FK
+http_events,scenario_run_id,scenario_runs,id,FK
+http_events,synthetic_session_id,synthetic_sessions,id,FK
+traffic_windows,scenario_run_id,scenario_runs,id,FK
+learned_patterns,model_version_id,model_versions,id,FK
+model_scores,window_id,traffic_windows,id,FK
+model_scores,model_version_id,model_versions,id,FK
+alarms,window_id,traffic_windows,id,FK
+alarms,model_version_id,model_versions,id,FK
+alarm_signals,alarm_id,alarms,id,FK
+alarm_signals,model_version_id,model_versions,id,FK
+alarm_reviews,alarm_id,alarms,id,FK
+alarm_reviews,reviewer_user_id,users,id,FK
+evaluation_results,model_version_id,model_versions,id,FK
+workspaces,owner_user_id,users,id,FK
+workspace_memberships,workspace_id,workspaces,id,FK
+workspace_memberships,user_id,users,id,FK
+user_invitations,workspace_id,workspaces,id,FK
+user_invitations,inviter_id,users,id,FK
+password_reset_requests,user_id,users,id,FK
+api_credentials,workspace_id,workspaces,id,FK
+integrations,workspace_id,workspaces,id,FK
+onboarding_progress,workspace_id,workspaces,id,FK
+onboarding_progress,changed_by_user_id,users,id,FK
+notifications,workspace_id,workspaces,id,FK
+notifications,user_id,users,id,FK
+notifications,related_alarm_id,alarms,id,FK
+notification_preferences,workspace_id,workspaces,id,FK
+notification_preferences,user_id,users,id,FK
+report_exports,workspace_id,workspaces,id,FK
+report_exports,requested_by,users,id,FK
+audit_events,workspace_id,workspaces,id,FK
+audit_events,actor_user_id,users,id,FK
+workspace_subscriptions,workspace_id,workspaces,id,FK
+workspace_subscriptions,plan_id,product_plans,id,FK
+invoices,subscription_id,workspace_subscriptions,id,FK
+scenario_runs,workspace_id,workspaces,id,FK (extension)
+ingestion_batches,workspace_id,workspaces,id,FK (extension)
+model_versions,workspace_id,workspaces,id,FK (extension)
+alarms,workspace_id,workspaces,id,FK (extension)

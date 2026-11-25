@@ -1,0 +1,11 @@
+source,fpr_target,model,threshold,n_test,test_attack_fraction,tn,fp,fn,tp,precision,recall,f1,fpr,balanced_accuracy,mcc,average_precision
+offline_statistical_simulation_not_live_http,0.05,B0_volume,1.9787684900233227,240,0.5,114,6,120,0,0.0,0.0,0.0,0.05,0.475,-0.16013,0.38447
+offline_statistical_simulation_not_live_http,0.05,B0_multivariate,4.200883148730943,240,0.5,117,3,21,99,0.97059,0.825,0.89189,0.025,0.9,0.80915,0.93999
+offline_statistical_simulation_not_live_http,0.05,M1_KMeans,1.3730262215647189,240,0.5,115,5,29,91,0.94792,0.75833,0.84259,0.04167,0.85833,0.73144,0.92421
+offline_statistical_simulation_not_live_http,0.05,M1_DBSCAN,0.8954696186187491,240,0.5,117,3,27,93,0.96875,0.775,0.86111,0.025,0.875,0.76547,0.93868
+offline_statistical_simulation_not_live_http,0.05,B1_IsolationForest,0.5568940868332419,240,0.5,115,5,49,71,0.93421,0.59167,0.72449,0.04167,0.775,0.59117,0.92666
+offline_statistical_simulation_not_live_http,0.1,B0_volume,1.7558070305288234,240,0.5,105,15,120,0,0.0,0.0,0.0,0.125,0.4375,-0.2582,0.38447
+offline_statistical_simulation_not_live_http,0.1,B0_multivariate,2.698,240,0.5,110,10,20,100,0.90909,0.83333,0.86957,0.08333,0.875,0.75262,0.93999
+offline_statistical_simulation_not_live_http,0.1,M1_KMeans,1.209558633432491,240,0.5,114,6,29,91,0.93814,0.75833,0.83871,0.05,0.85417,0.72171,0.92421
+offline_statistical_simulation_not_live_http,0.1,M1_DBSCAN,0.7052488913172233,240,0.5,112,8,23,97,0.92381,0.80833,0.86222,0.06667,0.87083,0.74753,0.93868
+offline_statistical_simulation_not_live_http,0.1,B1_IsolationForest,0.5149250888474108,240,0.5,110,10,28,92,0.90196,0.76667,0.82883,0.08333,0.84167,0.69115,0.92666

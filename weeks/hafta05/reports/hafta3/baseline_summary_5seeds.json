@@ -1,0 +1,91 @@
+{
+  "source": "offline synthetic aggregate simulation, NOT Django/Locust HTTP data",
+  "model_results": {
+    "B0_robust_volume_z": {
+      "f1_mean": 0.0,
+      "f1_bootstrap_95_ci_seed_level": [
+        0.0,
+        0.0
+      ],
+      "fpr_mean": 0.0567,
+      "seeds": [
+        11,
+        23,
+        42,
+        71,
+        97
+      ]
+    },
+    "KMeans": {
+      "f1_mean": 0.9774,
+      "f1_bootstrap_95_ci_seed_level": [
+        0.964,
+        0.9893
+      ],
+      "fpr_mean": 0.0467,
+      "seeds": [
+        11,
+        23,
+        42,
+        71,
+        97
+      ]
+    },
+    "DBSCAN_core": {
+      "f1_mean": 0.9681,
+      "f1_bootstrap_95_ci_seed_level": [
+        0.9519,
+        0.9828
+      ],
+      "fpr_mean": 0.0667,
+      "seeds": [
+        11,
+        23,
+        42,
+        71,
+        97
+      ]
+    },
+    "B1_IsolationForest": {
+      "f1_mean": 0.2154,
+      "f1_bootstrap_95_ci_seed_level": [
+        0.1388,
+        0.2829
+      ],
+      "fpr_mean": 0.065,
+      "seeds": [
+        11,
+        23,
+        42,
+        71,
+        97
+      ]
+    },
+    "B1_plus_D": {
+      "f1_mean": 0.4365,
+      "f1_bootstrap_95_ci_seed_level": [
+        0.3625,
+        0.4872
+      ],
+      "fpr_mean": 0.055,
+      "seeds": [
+        11,
+        23,
+        42,
+        71,
+        97
+      ]
+    }
+  },
+  "iterations": 5,
+  "seeds": [
+    11,
+    23,
+    42,
+    71,
+    97
+  ],
+  "windows_per_seed": 1200,
+  "temporal_split": "60/20/20 ordered within each seed; train/validation/test held separate",
+  "caveat": "CI resamples five independent seed runs, not a patient/population confidence interval. Not a test of live service performance."
+}

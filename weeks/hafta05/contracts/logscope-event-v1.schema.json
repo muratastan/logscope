@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://logscope.local/contracts/logscope-event-v1.schema.json",
+  "title": "LogScope anonymized synthetic HTTP event v1.0",
+  "description": "Only allow-listed fields. Never log IP, cookies, tokens, headers, body or raw URL query parameters.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_uid", "occurred_at", "http_method", "route_template", "status_code", "duration_ms", "session_ref", "schema_version"],
+  "properties": {
+    "event_uid": {"type": "string", "minLength": 1, "maxLength": 96, "pattern": "^[A-Za-z0-9._-]+$"},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "http_method": {"type": "string", "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]},
+    "route_template": {"type": "string", "maxLength": 151, "pattern": "^/[A-Za-z0-9_{}\\/-]*$"},
+    "status_code": {"type": "integer", "minimum": 100, "maximum": 599},
+    "duration_ms": {"type": "number", "minimum": 0, "maximum": 10000000},
+    "session_ref": {"anyOf": [{"type": "string", "pattern": "^[A-Za-z0-9_-]{1,80}$"}, {"type": "null"}]},
+    "schema_version": {"type": "string", "const": "1.0"}
+  }
+}
