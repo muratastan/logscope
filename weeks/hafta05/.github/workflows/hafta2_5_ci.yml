@@ -1,0 +1,72 @@
+name: LogScope Weeks 2-5 validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python-postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: logscope_dev
+          POSTGRES_PASSWORD: local_ci_only_secret
+          POSTGRES_DB: logscope
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U logscope_dev -d logscope"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PYTHONPATH: .
+      LOGSCOPE_DATABASE_URL: postgresql+psycopg://logscope_dev:local_ci_only_secret@localhost:5432/logscope
+      LOGSCOPE_DEMO_PASSWORD: ci_not_a_public_password
+      LOGSCOPE_DEMO_MODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Python dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Database migration PostgreSQL 16
+        run: python -m scripts.apply_postgres_migrations
+      - name: Verify canonical PostgreSQL tables
+        run: |
+          python - <<'PY'
+          import os,psycopg
+          url=os.environ['LOGSCOPE_DATABASE_URL'].replace('postgresql+psycopg://','postgresql://')
+          with psycopg.connect(url) as db:
+              with db.cursor() as c:
+                  c.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='logscope' AND table_type='BASE TABLE'")
+                  n=c.fetchone()[0]
+                  print('Canonical database tables:', n)
+                  assert n>=27, f'Expected at least 27; got {n}'
+          PY
+      - name: Python/API/ML tests
+        run: python -m pytest -q tests
+      - name: Deliverable audit
+        run: python -m scripts.week2_5_audit
+      - name: Django tests
+        working-directory: django_demo
+        run: python manage.py test events
+  react-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: React dependencies
+        working-directory: frontend
+        run: npm install --no-audit --no-fund
+      - name: Check React screens and JSX
+        working-directory: frontend
+        run: |
+          npm run check:jsx
+          npm run check:routes
+      - name: Build React application
+        working-directory: frontend
+        run: npm run build

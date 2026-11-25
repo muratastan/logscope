@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-29T13:39:53Z" agent="LogScope Drawio Compatible Export" version="24.7.17" type="device">
+  <diagram id="page04" name="04 Giris">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2170" pageHeight="1390" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page04_st" value="Başla&lt;br/&gt;Giriş isteği" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="115" y="500" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_format" value="Girdi ve oran&lt;br/&gt;sınırı uygun mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="420" y="474" width="260" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_denied" value="400 / 429&lt;br/&gt;Girdi reddi; denetim kaydı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="385" y="790" width="300" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_pass" value="Parola özeti ve&lt;br/&gt;kullanıcı eşleşiyor mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="790" y="474" width="275" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_reject" value="401 · Hatalı kimlik&lt;br/&gt;Hassas veri kaydetme" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="788" y="790" width="270" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_role" value="Rol yetkisi&lt;br/&gt;yeterli mi?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="474" width="270" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_forbidden" value="403 · Yetkisiz erişim&lt;br/&gt;Audit / inceleme kaydı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1208" y="790" width="275" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_session" value="Güvenli oturum&lt;br/&gt;ve yetkili ekran" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="487" width="360" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_end" value="Bitiş" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="795" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_f4" value="Kritik kural: şifre düz metin saklanmaz; rol kontrolü API tarafında uygulanır.&lt;br/&gt;Başarısız girişlerde hız sınırı ve denetim kaydı öngörülür." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=19;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1080" width="1900" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_st" target="page04_format">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e2" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_format" target="page04_pass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e3" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_format" target="page04_denied">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e4" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_pass" target="page04_role">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e5" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_pass" target="page04_reject">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e6" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_role" target="page04_session">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e7" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_role" target="page04_forbidden">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_denied" target="page04_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_reject" target="page04_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_forbidden" target="page04_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page04_e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page04_session" target="page04_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page05" name="05 JSONL">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1520" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page05_st" value="Django middleware&lt;br/&gt;JSONL olay kaydı" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="105" y="575" width="245" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_redact" value="Ham IP / parola / çerez /&lt;br/&gt;token / gövde hariç tut" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="435" y="570" width="287" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_privacy" value="Hassas alan&lt;br/&gt;var mı?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="810" y="541" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_drop" value="Güvenlik reddi&lt;br/&gt;Sayı / gerekçe kaydı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="816" y="850" width="272" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_valid" value="JSONL şeması&lt;br/&gt;geçerli mi?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1172" y="541" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_quarantine" value="Bozuk/eksik satırı&lt;br/&gt;karantinaya ayır" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1166" y="852" width="290" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_dup" value="event_uid daha&lt;br/&gt;önce işlendi mi?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="541" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_dup_out" value="Tekrar kaydı say&lt;br/&gt;çift insert yapma" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1544" y="855" width="285" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_write" value="PostgreSQL&lt;br/&gt;kayıt denemesi" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1935" y="548" width="275" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_dbfail" value="DB hatası / zaman aşımı&lt;br/&gt;İdempotent yeniden dene" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="840" width="324" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_ok" value="Kabul edilen olay&lt;br/&gt;ve işlem sayacı" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="1162" width="325" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_st" target="page05_redact">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_redact" target="page05_privacy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e3" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_privacy" target="page05_valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e4" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_privacy" target="page05_drop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e5" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_valid" target="page05_dup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e6" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_valid" target="page05_quarantine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e7" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_dup" target="page05_write">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e8" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_dup" target="page05_dup_out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e9" value="Başarılı" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_write" target="page05_ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e10" value="Hata" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_write" target="page05_dbfail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e11" value="Yeniden deneme" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C97878;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_dbfail" target="page05_write">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e12" value="Red sayacı" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=none;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_drop" target="page05_ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e13" value="Red sayacı" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=none;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_quarantine" target="page05_ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page05_e14" value="Tekrar sayacı" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=none;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page05_dup_out" target="page05_ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page06" name="06 Etiketleme">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2360" pageHeight="1410" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page06_st" value="Kabul edilmiş&lt;br/&gt;HTTP olayları" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="80" y="550" width="240" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_utc" value="UTC zaman + rota şablonu&lt;br/&gt;Oturum ayrıştırması" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="398" y="552" width="315" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_complete" value="Temel alanlar&lt;br/&gt;tam mı?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="787" y="521" width="225" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_missing" value="Eksik olay /&lt;br/&gt;veri kalite listesi" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="780" y="855" width="260" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_features" value="1 dk / rota özellikleri&lt;br/&gt;4xx/5xx, p50/p95, hacim" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1114" y="545" width="330" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_overlap" value="Senaryo&lt;br/&gt;sınırı çakışıyor mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="523" width="245" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_uncertain" value="Belirsiz etiket&lt;br/&gt;Ana F1 dışı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1504" y="845" width="265" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_split" value="Kronolojik ayrım&lt;br/&gt;%60 / %20 / %20" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1890" y="541" width="300" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_leak" value="Sızıntı kontrolü&lt;br/&gt;Oturum / seed ayrımı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1890" y="842" width="305" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_foot" value="Model girdilerine senaryo kimliği veya gerçek etiket verilmez. Ölçekleme ve örüntü öğrenimi yalnız eğitim kümesinde yapılır." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=19;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="135" y="1120" width="2010" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_st" target="page06_utc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_utc" target="page06_complete">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e3" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_complete" target="page06_features">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e4" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_complete" target="page06_missing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_features" target="page06_overlap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e6" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_overlap" target="page06_split">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e7" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_overlap" target="page06_uncertain">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_split" target="page06_leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page06_e9" value="ayrı analiz" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page06_uncertain" target="page06_leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page07" name="07 M4 Alarm">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1510" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page07_start" value="Yeni 1 dk penceresi&lt;br/&gt;+ rota / oturum" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="70" y="555" width="248" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_model" value="Model ve eşikler&lt;br/&gt;yüklü mü?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="390" y="529" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_fallback" value="Model yok: B0 veya&lt;br/&gt;inceleme kuyruğu" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="388" y="840" width="277" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_m12" value="M1 küme uzaklığı&lt;br/&gt;M2 anomali puanı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="768" y="550" width="278" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_history" value="Oturum geçmişi&lt;br/&gt;yeterli mi?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1152" y="524" width="239" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_no_m3" value="M3 puanı yok&lt;br/&gt;Açıklamada belirt" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1139" y="845" width="262" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_m3" value="M3 rota geçiş&lt;br/&gt;nadirliği" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="273" width="263" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_m4" value="M4: sinyalleri birleştir&lt;br/&gt;Sabitlenmiş eşikle karşılaştır" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1558" y="555" width="325" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_threshold" value="Skor alarm eşiğini&lt;br/&gt;aşıyor mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1955" y="526" width="256" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_normal" value="Normal / gerekirse&lt;br/&gt;özet raporu" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1963" y="273" width="280" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_alert" value="Alarm + açıklama&lt;br/&gt;Log, özellik, model sürümü" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="849" width="298" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_persist" value="Kaydetme hatasında&lt;br/&gt;retry / audit / kuyruk" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="1190" width="305" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_note" value="Hedef: açıklanabilir alarm; otomatik saldırı teşhisi değildir. Threshold ve ağırlıklar testte yeniden öğrenilmez." style="text;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontColor=#234055;fontSize=20;fontStyle=0;fontFamily=Arial;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1173" width="1700" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_start" target="page07_model">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e2" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_model" target="page07_m12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e3" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_model" target="page07_fallback">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_m12" target="page07_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e5" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_history" target="page07_m3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e6" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_history" target="page07_no_m3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_m3" target="page07_m4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_no_m3" target="page07_m4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_m4" target="page07_threshold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e10" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_threshold" target="page07_normal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e11" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_threshold" target="page07_alert">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e12" value="Veri tabanı hatası" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C97878;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_alert" target="page07_persist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page07_e13" value="olay kaydı" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C97878;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page07_fallback" target="page07_persist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page08" name="08 Alarm Rapor">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2270" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page08_st" value="Analist paneli&lt;br/&gt;Alarm seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="80" y="550" width="260" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_auth" value="Oturum / rol&lt;br/&gt;uygun mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="415" y="521" width="230" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_deny" value="401 / 403&lt;br/&gt;İşlem reddi" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="415" y="828" width="257" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_filter" value="Tarih / rota filtrele&lt;br/&gt;Alarm + log + skor sorgula" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF2FB;strokeColor=#537CA4;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="755" y="545" width="328" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_found" value="Kayıt bulundu mu?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1162" y="530" width="220" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_empty" value="Boş liste açıklaması&lt;br/&gt;Filtreyi düzenle" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="829" width="264" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_review" value="İnceleme notu / durum&lt;br/&gt;Yeni - İnceleniyor - Kapalı" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="546" width="323" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_export" value="CSV / PDF dışa aktarımı&lt;br/&gt;başarılı mı?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF3DD;strokeColor=#BB9046;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1936" y="529" width="228" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_retry" value="İşlem hatası&lt;br/&gt;Uyarı + tekrar deneme" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FCEBEB;strokeColor=#C97878;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1905" y="851" width="280" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_done" value="Rapor indir&lt;br/&gt;Denetim kaydı oluştur" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E5F6F0;strokeColor=#3E947D;strokeWidth=2;fontColor=#234055;fontSize=17;fontStyle=1;fontFamily=Arial;align=center;verticalAlign=middle;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="254" width="303" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_st" target="page08_auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e2" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_auth" target="page08_filter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e3" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_auth" target="page08_deny">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_filter" target="page08_found">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e5" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_found" target="page08_review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e6" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_found" target="page08_empty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_review" target="page08_export">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e8" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_export" target="page08_done">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e9" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6B8293;strokeWidth=2.4;dashed=0;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_export" target="page08_retry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="page08_e10" value="yeniden dene" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C97878;strokeWidth=2.4;dashed=1;dashPattern=7 6;endArrow=block;endFill=1;fontColor=#26485E;fontSize=15;fontFamily=Arial;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="page08_retry" target="page08_export">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

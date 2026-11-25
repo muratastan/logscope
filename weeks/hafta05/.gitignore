@@ -1,0 +1,23 @@
+# secrets / local environment
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+frontend/dist/
+*.sqlite
+*.sqlite3
+*.db
+# generated logs are synthetic but may grow large
+*.jsonl
+!ornek_veri/*.jsonl
+# local generated artifacts
+*.log
+.vscode/*.log
+.DS_Store
+Thumbs.db

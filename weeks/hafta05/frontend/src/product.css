@@ -1,0 +1,12 @@
+.space-top{margin-top:18px}
+.goal-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.goal-grid .action-card h2{margin:9px 0 0}
+.product-art .chart-svg{height:138px}
+.art-alert{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px}
+.marketing .hero .btn{white-space:nowrap}
+.app-card hr{border:0;border-top:1px solid #e5ecf3;margin:18px 0}
+.app-card a:not(.btn){color:#139c82;font-weight:700}
+button,select,input{font:inherit}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #1fa68d;outline-offset:3px}
+.toast{background:#143448;color:white;padding:14px 22px;border-radius:10px;cursor:pointer;max-width:350px;box-shadow:0 12px 33px #0003}
+@media(max-width:690px){.goal-grid{grid-template-columns:1fr}.public-top{flex-wrap:wrap}}

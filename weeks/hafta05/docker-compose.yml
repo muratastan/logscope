@@ -1,0 +1,55 @@
+# LOCAL RESEARCH ONLY. localhost ports; no external production exposure.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: logscope
+      POSTGRES_USER: logscope_dev
+      POSTGRES_PASSWORD: ${LOGSCOPE_DB_PASSWORD:?Set LOGSCOPE_DB_PASSWORD in .env}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./db/01_research_core.sql:/docker-entrypoint-initdb.d/01_research_core.sql:ro
+      - ./db/02_product_extensions.sql:/docker-entrypoint-initdb.d/02_product_extensions.sql:ro
+      - ./db/03_demo_plan_seed.sql:/docker-entrypoint-initdb.d/03_demo_plan_seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U logscope_dev -d logscope"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      LOGSCOPE_DATABASE_URL: postgresql+psycopg://logscope_dev:${LOGSCOPE_DB_PASSWORD}@postgres:5432/logscope
+      LOGSCOPE_DEMO_PASSWORD: ${LOGSCOPE_DEMO_PASSWORD:?Set LOGSCOPE_DEMO_PASSWORD in .env}
+      LOGSCOPE_DEMO_MODE: ${LOGSCOPE_DEMO_MODE:-1}
+      LOGSCOPE_HTTPS: '0'
+      LOGSCOPE_ALLOWED_ORIGINS: http://127.0.0.1:5173,http://localhost:5173,http://127.0.0.1:8000,http://localhost:8000
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile.django
+    environment:
+      LOGSCOPE_JSONL_PATH: /app/logs/access.jsonl
+      LOGSCOPE_ENABLE_ANOMALY_ENDPOINTS: ${LOGSCOPE_ENABLE_ANOMALY_ENDPOINTS:-0}
+      LOGSCOPE_DJANGO_SECRET: ${LOGSCOPE_DJANGO_SECRET:?Set Django local secret in .env}
+    ports: ["127.0.0.1:8001:8001"]
+    volumes:
+      - traffic_logs:/app/logs
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    environment:
+      API_PROXY_TARGET: http://api:8000
+    ports: ["127.0.0.1:5173:5173"]
+    depends_on: [api]
+volumes:
+  pg_data:
+  traffic_logs:

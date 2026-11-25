@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#14334d"/>
+<rect x="0" y="740" width="1440" height="160" rx="0" fill="#0a5856"/>
+<text x="104" y="157" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#abebe3" text-anchor="start">LOGSCOPE · DERS PROJESİ</text>
+<text x="104" y="300" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="white" text-anchor="start">Web trafiğini</text>
+<text x="104" y="360" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="white" text-anchor="start">bağlamıyla inceleyin.</text>
+<text x="104" y="423" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#c1dbd9" text-anchor="start">Trafik yoğunluğu, anomaliler ve oturum örüntülerini</text>
+<text x="104" y="452" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#c1dbd9" text-anchor="start">kontrollü senaryolar üzerinde karşılaştırın.</text>
+<rect x="760" y="135" width="530" height="620" rx="23" fill="white"/>
+<text x="817" y="221" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#172a45" text-anchor="start">LogScope’a giriş</text>
+<text x="817" y="261" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#61738d" text-anchor="start">6 ekranlık tıklanabilir prototip</text>
+<text x="817" y="329" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#61738d" text-anchor="start">E-posta</text>
+<rect x="817" y="346" width="407" height="62" rx="10" fill="#f7faff" stroke="#dfe7ef"/>
+<text x="835" y="387" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#172a45" text-anchor="start">analist@demo.local</text>
+<text x="817" y="446" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#61738d" text-anchor="start">Parola</text>
+<rect x="817" y="463" width="407" height="62" rx="10" fill="#f7faff" stroke="#dfe7ef"/>
+<text x="835" y="504" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#172a45" text-anchor="start">••••••••</text>
+<rect x="817" y="588" width="407" height="63" rx="10" fill="#0b987c"/>
+<text x="1020" y="628" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="white" text-anchor="middle">Demo olarak devam et</text>
+<text x="817" y="700" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#61738d" text-anchor="start">Hesap ve veri kaydı bulunmaz. Yalnızca tasarım maketidir.</text>
+</svg>
